@@ -6,13 +6,37 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.css">
+        <LINK rel="stylesheet" href="css/font.css">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        
     </head>
     <body >
     
         <nav id="navbar" class="navbar navbar-area navbar-expand-lg nav-style-01 fixed-top" >
-            <div class= " nav-container" style="width: 90%; margin-left: 5%;">
-                <div class="collapse navbar-collapse ">
+            <div class= "container nav-container" >
+                <div class="responsive-mobile-menu">
+                    <div class="logo-wrapper mobile-logo">
+                        <a href="" class="logo">
+                            <img src="image/LhGhvXDqgNMKyyqIHOkan8SbNZspTooK6tRNMq6G.png">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggle-icon">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </span>
+                    </button>
+                </div>
+                <div id="main_menu" class="collapse navbar-collapse ">
                     <div class="logo-wrapper desktop-logo" >
                         <a href="#" class="logo">
                             <img src="image/LhGhvXDqgNMKyyqIHOkan8SbNZspTooK6tRNMq6G.png" alt>
@@ -42,23 +66,24 @@
                 </div>
             </div>
         </nav>
-        <div class="header-area header-bg" style="background-image:url(image/hero-bg.png); ">
-            <div style="width: 90%; margin-left: 5%;">
+        <div id="home" class="header-area header-bg" style="background-image:url(image/hero-bg.png); ">
+            <div class="container">
                 <div class="banner-slider-item">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="header-inner-details">
                                 <div class="header-inner">
                                     <h1 class="title s-animate-1">Supercharge Your <span>Marketing</span> Campaigns</h1>
+                                    <p>Shorten, track, and optimize your links with catchy call-to-actions, retargeting pixels, branded links, and powerful
+                                        analytics.</p>
+                                    <div class="btn-wrapper desktop-left padding-top-20">
+                                        <a class="btn btn-radius btn-green  btn-trial mr-md-3 ">Start Free Trial</a>
+                                        <a class="btn btn-radius btn-normal">Get Started Now</a>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <p>Shorten, track, and optimize your links with catchy call-to-actions, retargeting pixels, branded links, and powerful
-                            analytics.</p>
-                            <div class="btn-wrapper desktop-left padding-top-20 row">
-                                <a class="btn btn-radius btn-green  btn-trial mr-md-3 col-4">Start Free Trial</a>
-                                <a class="btn btn-radius btn-normal col-4">Get Started Now</a>
-                            </div>
+                            
                         </div>
                         <div class="col-lg-6 col-md-6 hidden-sm">
                             <div class="banner-thumb-wrap">
@@ -71,14 +96,13 @@
                 </div>
             </div>
         </div>
-        <div class="service-area sbbs-service-area pd-top-80">
-            <div style="width: 90%; margin-left: 5%;">
-                <div class="row justify-content-center" style="padding-bottom: 50px;">
+        <div id="how-it-works" class="service-area sbbs-service-area">
+            <div class="container">
+                <div class="row justify-content-center" >
                     <div class="col-xl-6">
                         <div class="section-title text-center">
                             <h2 class="title">How It Works</h2>
-                            <P>Leverage content already available on other websites to promote your products and services by adding retargeting pixels
-                            and call-to-actions.</P>
+                            <P class="mt-0">Leverage content already available on other websites to promote your products and services by adding retargeting pixels and call-to-actions.</P>
                         </div>
                     </div>
                 </div>
@@ -128,38 +152,39 @@
                 </div>
             </div>
         </div>
-        <div class="business-time pd-top-80">
-            <div class="row" style="width: 90%; margin-left: 5%;">
-                <div class="col-md-6 sbimg-center-align">
-                            <img class="sbdm-image-1" src="image/dashboard.png">
-                </div>
-                <div class="col-md-6 desktop-center-item">
-                    <div class="mg-top-767-45">
-                        <div class="section-title style-two">
-                            <h2 class="title">Marketing on steroids</h2>
-                            <p>Our short links allow you to collect various types of data about your customers and their behaviors</p>
-                        </div>
-                        <div class="riyaqas-check-list media">
-                            <span>Use livechat on your website? Why not add it to the links you share to engage with them after they click on your link</span>
-                        </div>
-                        <div class="riyaqas-check-list media">
-                            <span>Save and organize all your optimized links by campaigns which allow you to track and analyze the overall clicks and
-                            conversions.</span>
-                        </div>
-                        <div class="riyaqas-check-list media mg-bottom-0-991">
-                            <span>Use email opt-in popup on your smart link to grow your email list. We support any opt-in popup software that provides an
-                            embeddable script.</span>
-                        </div>
-                        <div class="text-center justify-content-center row">
-                            <a href="#" class="btn btn-green btn-radius mt-4 col-4">Get Start Now</a>
+        <div class="business-time">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 sbimg-center-align">
+                                <img class="sbdm-image-1" src="image/dashboard.png">
+                    </div>
+                    <div class="col-md-6 desktop-center-item">
+                        <div class="mg-top-767-45">
+                            <div class="section-title style-two">
+                                <h2 class="title">Marketing on steroids</h2>
+                                <p>Our short links allow you to collect various types of data about your customers and their behaviors</p>
+                            </div>
+                            <div class="riyaqas-check-list media">
+                                <span>Use livechat on your website? Why not add it to the links you share to engage with them after they click on your link</span>
+                            </div>
+                            <div class="riyaqas-check-list media">
+                                <span>Save and organize all your optimized links by campaigns which allow you to track and analyze the overall clicks and
+                                conversions.</span>
+                            </div>
+                            <div class="riyaqas-check-list media mg-bottom-0-991">
+                                <span>Use email opt-in popup on your smart link to grow your email list. We support any opt-in popup software that provides an
+                                embeddable script.</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-green btn-radius mt-4">Get Started Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="sbtc-service-area ">
-            <div style="width: 90%; margin-left: 5%;">
+        <div id="features" class="sbtc-service-area ">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="section-title text-center">
@@ -232,7 +257,7 @@
             </div>
         </div>
         <div class="sbtc-service-area">
-            <div style="width: 90%; margin-left: 5%;">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="section-title text-center">
@@ -245,8 +270,8 @@
                 <img class="img-fluid" src="image/analytics.png">
             </div>
         </div>
-        <div class="sbbs-pricing-area">
-            <div style="width: 90%; margin-left: 5%;">
+        <div id="pricing" class="sbbs-pricing-area">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="section-title text-center">
@@ -338,7 +363,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="single-pricing text-center ">
-                            <h6 class="title">Premium`</h6>
+                            <h6 class="title">Premium</h6>
                             <h3 class="price">$39.99<span>/monthly</span></h3>
                             <ul>
                                 <li>
@@ -379,14 +404,91 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" >
-            
+        <div class="sba-client-area">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-9">
+                            <div class="section-title style-two text-center">
+                                <h2 class="title">What Our Users Say?</h2>
+                                <p>Everyone who clicks on your optimize links can be converted into a potential customer</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="client-slider owl-carousel owl-theme owl-loaded owl-center">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div id="owl-demo" class="">
+                                <div class=" client-slider-item">
+                                    <div class="media">
+                                        <img src="image/avatar-1.png">
+                                        <div class="media-body">
+                                            <h6>Kellie Parks</h6>
+                                        </div>
+                                    </div>
+                                    <p class="cient-content">
+                                        The ability to insert any type of call to actions to any website is what every marketer dream of doing
+                                    </p>
+                                </div>
+                                <div class="client-slider-item">
+                                    <div class="media">
+                                        <img src="image/avatar-2.png">
+                                        <div class="media-body">
+                                            <h6>Julian Schmidt</h6>
+                                        </div>
+                                    </div>
+                                    <p class="cient-content">
+                                        Retargeting made easy!, This platform made it super easy and effective to get potential clients from every link I share.
+                                    </p>
+                                </div>
+                                <div class="client-slider-item">
+                                    <div class="media">
+                                        <img src="image/avatar-3.png">
+                                        <div class="media-body">
+                                            <h6>Cody Diaz</h6>
+                                        </div>
+                                    </div>
+                                    <p class="cient-content">
+                                        I love the fact that I have the freedom of customizing the links so that they are more tailored to suit my audiences and
+                                        my needs!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="owl-controls">
+                        <div id="carousel-custom-dots" class="owl-dots">
+                            <div class="owl-dot">
+                            </div>
+                            <div class="owl-dot active">
+                            </div>
+                            <div class="owl-dot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-            <h3>Top Fixed Navbar</h3>
-            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-            <h1>Scroll this page to see the effect</h1>
-        </div>
-    
+        <footer class="footer-area">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9 col-lg-11">
+                            <div class="copyright-inner">
+                                <div class="copyright-text">
+                                    © 2022 SmartShare - All Rights Reserved
+                                    <br>
+                                    <a>Privacy Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
     <script >
         window.onscroll = function () { scrollFunction() };
@@ -401,5 +503,46 @@
 
                 }
             }
+            $(document).ready(function () {
+                 $('.header-inner-details').css("height", window.innerHeight);
+                 $('.banner-thumb').css("height", window.innerHeight);
+                 $(window).resize(function () {
+                     $('.header-inner-details').css("height", window.innerHeight);
+                     $('.banner-thumb').css("height", window.innerHeight);
+                 });
+                });
+           $(document).ready(function () {
+            
+                var owl = $("#owl-demo");
+
+                owl.owlCarousel({
+                    loop:true,
+                    dots:true,
+                    center:true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        800:{
+                            items:2
+                        },
+                        1200:{
+                            items:3
+                        }
+                    }
+                    // items: 3, //10 items above 1000px browser width
+                    // itemsDesktop: [1000, 2], //5 items between 1000px and 901px
+                    // itemsTablet: [600, 1], //2 items between 600 and 0
+                    // itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
+                });
+
+                // Custom Navigation Events
+                $(".owl-dot").click(function () {
+                    $(".owl-dot").removeClass("active");
+                    $(this).addClass("active");
+                   owl.trigger('to.owl.carousel', [$(this).index(), 1000]);
+               });
+
+            });
     </script>
 </html>

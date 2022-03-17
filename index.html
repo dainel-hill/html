@@ -28,7 +28,7 @@
                             <img src="image/LhGhvXDqgNMKyyqIHOkan8SbNZspTooK6tRNMq6G.png">
                         </a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggle-icon">
                             <span class="line"></span>
                             <span class="line"></span>
@@ -44,22 +44,22 @@
                     </div>
                     <ul class="navbar-nav text-right" >
                         <li>
-                            <a href="#home" >Home</a>
+                            <a class="main_menu_button" href="#home" >Home</a>
                         </li>
                         <li>
-                            <a href="#how-it-works">How It Works</a>
+                            <a class="main_menu_button" href="#how-it-works">How It Works</a>
                         </li>
                         <li>
-                            <a href="#features">Features</a>
+                            <a class="main_menu_button" href="#features">Features</a>
                         </li>
                         <li>
-                            <a href="#pricing">Pricing</a>
+                            <a class="main_menu_button" href="#pricing">Pricing</a>
                         </li>
                         <li>
-                            <a href="https://smartshare.co/login">Login</a>
+                            <a class="main_menu_button" href="https://smartshare.co/login">Login</a>
                         </li>
                         <li class="d-block d-sm-none">
-                            <a href="https://smartshare.co/register">Register</a>
+                            <a class="main_menu_button" href="https://smartshare.co/register">Register</a>
                         </li>
                     </ul>
                     <a href="#" class="btn btn-radius btn-green header-btn hidden-sm ml-4">Create an Account</a>
@@ -85,7 +85,7 @@
                             
                             
                         </div>
-                        <div class="col-lg-6 col-md-6 hidden-sm">
+                        <div class="col-lg-6 col-md-6 header-image hidden-sm">
                             <div class="banner-thumb-wrap">
                                 <div class="banner-thumb">
                                     <img class="header-inner-img" src="image/home-hero.png">
@@ -503,13 +503,25 @@
 
                 }
             }
+            $(".main_menu_button").click(function () {
+                    document.getElementById("navbar-toggler").ariaExpanded = "false";
+                    $(".navbar-collapse").removeClass("show");
+                });
             $(document).ready(function () {
+                if(window.innerWidth>991){
                  $('.header-inner-details').css("height", window.innerHeight);
-                 $('.banner-thumb').css("height", window.innerHeight);
-                 $(window).resize(function () {
-                     $('.header-inner-details').css("height", window.innerHeight);
-                     $('.banner-thumb').css("height", window.innerHeight);
-                 });
+
+                    $('.banner-thumb').css("height", window.innerHeight);
+                    }
+                    $(window).resize(function () {
+                        if(window.innerWidth>991){
+                            $('.banner-thumb').css("height", window.innerHeight);
+                            $('.header-inner-details').css("height", window.innerHeight);
+                        }
+                    });
+                
+                 
+                 
                 });
            $(document).ready(function () {
             
@@ -518,7 +530,6 @@
                 owl.owlCarousel({
                     loop:true,
                     dots:true,
-                    center:true,
                     responsive:{
                         0:{
                             items:1
@@ -527,13 +538,10 @@
                             items:2
                         },
                         1200:{
+                            center: true,
                             items:3
                         }
                     }
-                    // items: 3, //10 items above 1000px browser width
-                    // itemsDesktop: [1000, 2], //5 items between 1000px and 901px
-                    // itemsTablet: [600, 1], //2 items between 600 and 0
-                    // itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
                 });
 
                 // Custom Navigation Events
@@ -542,7 +550,7 @@
                     $(this).addClass("active");
                    owl.trigger('to.owl.carousel', [$(this).index(), 1000]);
                });
-
+               
             });
     </script>
 </html>

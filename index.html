@@ -459,7 +459,7 @@
                         </div>
                     </div>
                         
-                    <div class="owl-controls">
+                    <!-- <div class="owl-controls">
                         <div id="carousel-custom-dots" class="owl-dots">
                             <div class="owl-dot">
                             </div>
@@ -468,7 +468,7 @@
                             <div class="owl-dot">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -504,8 +504,15 @@
                 }
             }
             $(".main_menu_button").click(function () {
-                    document.getElementById("navbar-toggler").ariaExpanded = "false";
-                    $(".navbar-collapse").removeClass("show");
+                $(".navbar-collapse").collapse('hide');
+                });
+            $(document).click(function (event) {
+                    var clickover = $(event.target);
+                    var $navbar = $(".navbar-collapse");
+                    var _opened = $navbar.hasClass("show");
+                    if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                        $navbar.collapse('hide');
+                    }
                 });
             $(document).ready(function () {
                 if(window.innerWidth>991){
@@ -530,6 +537,7 @@
                 owl.owlCarousel({
                     loop:true,
                     dots:true,
+                    dotsEach: true,
                     responsive:{
                         0:{
                             items:1

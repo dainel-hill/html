@@ -8,13 +8,17 @@
     max-width: 1240px !important;
 }
 }
+@media (min-width: 767px) and (max-width: 991px){
+    .desktop-left .btn{
+    width: 184px !important;
+    margin-bottom: 10px !important;
+}
+}
 @media only screen and (max-width: 1550px){
-    .owl-theme .owl-dots .owl-dot{
+    .owl-theme .owl-dots .owl-dot span{
     display: none !important;
 }
-#carousel-custom-dots .owl-dot{
-    display: inline-block !important;
-}
+
 .navbar-area .nav-container .desktop-logo {
     margin-right: 60px;
 }
@@ -178,6 +182,9 @@
 .single-service-left .media-body{
     margin-left: 0px !important;
 }
+.desktop-left .btn{
+    margin-right: 0px !important;
+}
 }
 
 @media only screen and (max-width: 991px){
@@ -315,6 +322,10 @@
     padding: 0 30px !important;
     font-size: 15px !important;
 }
+.navbar-collapse .ml-4{
+    margin-left: 13px !important;
+}
+
 }
 @media only screen and (max-width: 767px){
     .header-btn{
